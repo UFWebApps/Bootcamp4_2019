@@ -355,7 +355,7 @@ or
 
 5. It should auto-open http://localhost:3000 in the browser after it starts up a server for you. If a browser doesn't open up, copy and paste this link into your web browser with a starter page.
 
-6. After this you should open the folder and replace the src file wit the file for this Bootcamp #4 github repo. You should then be able to see a listing of the building codes and buildings, search/filter textbox and space to output details about your project.
+6. After this you should open the folder and replace the src file with the file for this Bootcamp #4 github repo. You should then be able to see a listing of the building codes and buildings, search/filter textbox and space to output details about your project.
 
 7. Use the starter code (e.g, create-react-app with Bootcamp #4 code you created in steps 1-3) to create a front-end interface with React.js to display listings, as well as the ability to add new listings and delete old ones. 
 
