@@ -1,6 +1,6 @@
 import React from 'react';
 
-class BuilingList extends React.Component {
+class BuildingList extends React.Component {
 	render() {
 		//console.log('This is my directory file', this.props.data);
 		const { data } = this.props;
@@ -17,4 +17,4 @@ class BuilingList extends React.Component {
 		return <div>{buildingList}</div>;
 	}
 }
-export default BuilingList;
+export default BuildingList;

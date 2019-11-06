@@ -2,7 +2,7 @@
 
 In this assignment, we will continue to build upon our directory application by creating a front-end interface with React.js to display listings, as well as the ability to add new listings and delete old ones. 
 
-This readme file contains a very detailed overview of the technologies and concepts we will be using for this project. I highly suggest reading through it throughly and as you start working on the project visiting many of the linked items to understand the concepts and technologies in more depth.
+This readme file contains a very detailed overview of the technologies and concepts we will be using for this project. I highly suggest reading through it thoroughly and as you start working on the project visiting many of the linked items to understand the concepts and technologies in more depth.
 
 ### FRONT-END DEVELOPMENT
 Front-end web development revolves around anything you create that the users of that specific app sees. To put it plainly, it is everything to do with the User Interface (UI) of the app.
@@ -38,7 +38,7 @@ Bootstrap's documentation is extensive, so don't worry about memorizing everythi
 - [Feather](https://feathericons.com/) Open Source Icons
 
 ### Single-page Application
-In this course and project we will be building, a single-page application. A single-page applictation is an application that loads a single HTML page and all the necessary assets (such as JavaScript and CSS) required for the application to run. Any interactions with the page or subsequent pages do not require a round trip to the server which means the page is not reloaded. Most modern web development relies on single-page applications. 
+In this course and project we will be building, a single-page application. A single-page application is an application that loads a single HTML page and all the necessary assets (such as JavaScript and CSS) required for the application to run. Any interactions with the page or subsequent pages do not require a round trip to the server which means the page is not reloaded. Most modern web development relies on single-page applications. 
 
 ### Model-View-Controller (MVC) Architecture
 
@@ -58,11 +58,11 @@ The MVC concept has many variations and often does not _exactly_ follow the patt
 You can think of a component as a small feature that makes up a piece of the user interface (e.g., buttons, newsfeeds, blogs, comments). Each of these components exist within the same space, yet interact independently from one another. Components have their own structure, their own methods and their own APIs. Components are also reusable and can be “pasted” into interfaces at will. The independent nature of components allows for developers to create a UI with many different moving parts.
 
 
-Facebook developers based component based architecture off of the concept of [**AJAX**](https://www.w3schools.com/xml/ajax_intro.asp) request, in which call to the server are made directly from the client-side, allowing for the [**DOM**](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) (Document Object Model) to be dynamically uploaded without the need to refersh the page.  Components each have their own interfaces that can make calls to the server and update their interfaces. Because components are independent, one component can refresh without affecting other components or the UI as a whole. Additional resources: [**Good DOM Explanation with pictures**](https://css-tricks.com/dom/) and [**DOM as defined by W3C**](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html).
+Facebook developers based component based architecture off of the concept of [**AJAX**](https://www.w3schools.com/xml/ajax_intro.asp) request, in which call to the server are made directly from the client-side, allowing for the [**DOM**](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) (Document Object Model) to be dynamically uploaded without the need to refresh the page.  Components each have their own interfaces that can make calls to the server and update their interfaces. Because components are independent, one component can refresh without affecting other components or the UI as a whole. Additional resources: [**Good DOM Explanation with pictures**](https://css-tricks.com/dom/) and [**DOM as defined by W3C**](https://www.w3.org/TR/DOM-Level-2-Core/introduction.html).
 
 React.js, specifically, handles components in an extremely performance focused way. React.js uses something called a [**virtual DOM**](https://programmingwithmosh.com/react/react-virtual-dom-explained/) which uses a “diffing” algorithm to detect changes to a component and only render those changes, as opposed to re-rendering the entire component.
 
-*Differnce Between MVC and CBA*
+*Difference Between MVC and CBA*
 CBA also requires that all methods and APIs pertaining to a single component exist within that component’s structure, a JavaScript class. 
 
 MVC splits responsibilities of an application horizontally, e.g., separates structure, helper methods, and routing into different levels of the application. This results in a multi layered horizontal architecture. On the other hand, CBA splits them vertically, e.g., components contain all of design, logic, and helper methods within the within a single class and the same level of the architecture (generally the view).  This means that developers don’t have to spend much time trying to find which functions pertain to which parts of an application’s UI.
@@ -79,13 +79,13 @@ Thus, only use React Components for implementing dynamic functionality when need
 
 ### REACT
 
-[**React**](https://reactjs.org/) is a JavaScript library for building user interfaces. Created by Facebook, Instagram, and the community. React is the V is View in the MVC architecture. React uses a compinent-based architecture to implemnt and manage the View of a web applciation. 
+[**React**](https://reactjs.org/) is a JavaScript library for building user interfaces. Created by Facebook, Instagram, and the community. React is the V is View in the MVC architecture. React uses a component-based architecture to implement and manage the View of a web application. 
 
 React makes it (relatively) easy to start building an application by extending HTML so that the markup can describe not only the static webpage but also dynamic behavior. 
 
 Note: Outside of the pure React library itself, there are 3 distinct versions of React: React-devtools, ReactJS.Net, React Native. Other than React itself, React Native is pretty popular as well for creating Native mobile apps. However we will be using React.js.
 
-React uses its own flavor og Javascript called JSX. JSX allows us to describe our User Interfaces (UIs) in a syntax very close to the HTML that we are used to. It is, however, optional. React can be used without JSX, as you can see on the right side. In fact, React just compiles the JSX you see on the left to the pure JavaScript you see on the right. Then it works with compiled JavaScript in the browser. 
+React uses its own flavor of Javascript called JSX. JSX allows us to describe our User Interfaces (UIs) in a syntax very close to the HTML that we are used to. It is, however, optional. React can be used without JSX, as you can see on the right side. In fact, React just compiles the JSX you see on the left to the pure JavaScript you see on the right. Then it works with compiled JavaScript in the browser. 
 
 [**React Components**](https://www.freecodecamp.org/news/how-to-write-your-first-react-js-component-d728d759cabc/)
 Components are the basic building blocks of a React Application.As you think about the UI of your web application, identify aspects of your UI that are used several times (Button, Panel, Avatar), or are complex enough on its own (App, FeedStory, Comment). These are good candidates for reusable components you should develop.  
@@ -119,17 +119,17 @@ A class component is the predominant way to define a React component. It also ac
 
 Note: Class components can only change their internal state, not their properties.
 
-[**Anatomy of a React Componnent**](https://codeburst.io/react-state-vs-props-explained-51beebd73b21)
+[**Anatomy of a React Component**](https://codeburst.io/react-state-vs-props-explained-51beebd73b21)
 
 [React Components](https://reactjs.org/docs/react-component.html)  
 Component names should also always start with a capital letter (`<Wrapper/> not <wrapper/>`). See [**documentation**](https://reactjs.org/docs/components-and-props.html#rendering-a-component) for more information on rendering components.
 
-All react Components have the following featuress:
+All react Components have the following features:
 - *render()* - Mandatory
 - *constructor()*
 - *Import* 
 - Usage *<component />* - Looks similar to an HTML Tag and is used by parent components to add the child component to your application
-- *Export* - Makes the componenet accessible for us in other parts of the application
+- *Export* - Makes the component accessible for us in other parts of the application
 
 Components classes
 ```Javascript
@@ -160,7 +160,7 @@ This simple Hello Component takes in a value and when the nameUpdate function is
 
 *Component Communication* -State vs Props
 
-In a React component, props carry data around your application. Props are variables passed to it by its parent component. State on the other hand are also variables, but directly initialized and managed by the component. The state can be initalized by props.
+In a React component, props carry data around your application. Props are variables passed to it by its parent component. State on the other hand are also variables, but directly initialized and managed by the component. The state can be initialized by props.
 
 The State and Props objects have one important difference. Inside a class component, the State object can be changed while the Props object represents fixed values.
 
@@ -202,19 +202,19 @@ Most of your components will just display some kind of information based on the 
 ### Getting Started with React
 React certainly has a learning curve, and you should take some time going through tutorials to understand the basics. Below is a list of concepts and resources that may be helpful.
 
-[**React Vocabrulary**](https://reactjs.org/docs/glossary.html) - This is a must read as you are working though the assignment and tutorials.
+[**React Vocabulary**](https://reactjs.org/docs/glossary.html) - This is a must read as you are working though the assignment and tutorials.
 [**Thinking in React**](https://reactjs.org/docs/thinking-in-react.html) - This gives you an overview and philosophy for developing in React.
 [**React Developer Tools**](https://www.freecodecamp.org/news/how-to-see-your-react-state-props-in-the-browser-774098a50fcc/) Download the React Developer Tools Chrome Plug-in to help you debug your application or use the Chrome Developer Tools
 
 **Tutorials**
 *Getting Started: Creating a simple react app*
-[**Baby Name Tutorial**](https://www.youtube.com/playlist?list=PLHrxuCR-0CcT7hgVVlh0lBWTqYkEEF55m) This is a 12 part video tutorial that walks through how to create a simple web applicaiton. It is very similar to the app that you will create in this assignment. *NOTE: I highly recommend working throuhg this tutorial and adapting it to complete this assighment.*
+[**Baby Name Tutorial**](https://www.youtube.com/playlist?list=PLHrxuCR-0CcT7hgVVlh0lBWTqYkEEF55m) This is a 12 part video tutorial that walks through how to create a simple web application. It is very similar to the app that you will create in this assignment. *NOTE: I highly recommend working through this tutorial and adapting it to complete this assignment.*
 [**Create-react-app**](https://reactjs.org/docs/create-a-new-react-app.html) is a comfortable environment for learning React, and is the best way to start building a new single-page application in React.
 
 **Other Tutorials**
 -   *Tutorialspoint*: [ReactJS Tutorial](https://www.tutorialspoint.com/reactjs/index.htm)
 -   *Code Academy*: [Learn ReactJS](https://www.codecademy.com/learn/react-101)
--   *Tutorial provided from the [*ReactJS website*](https://reactjs.org/tutorial/tutorial.htmll)
+-   *Tutorial provided from the [*ReactJS website*](https://reactjs.org/tutorial/tutorial.html)
 -   *Egghead_io* [videos on ReactJS](https://egghead.io/courses/the-beginner-s-guide-to-react)
 
 
@@ -232,7 +232,7 @@ React certainly has a learning curve, and you should take some time going throug
 -- Import & Usage <component /> // Looks similar to an HTML Tag
 -- Export
 
-*State & Pasing State*
+*State & Passing State*
 -   Passing State - props
 -- https://reactjs.org/docs/react-component.html#props 
 -- https://reactjs.org/docs/render-props.html
@@ -261,7 +261,7 @@ For this assignment you will be building upon our UF directory application by cr
 #### In this GitHub Repository, you are given the following files
 *When using the [create-react-app](https://github.com/facebook/create-react-app) read the readMe to get a starter application up and running, you can replace the src file in the starter application with the src file from the Bootcamp #4 assignment repo*
 - *Data.js* - A list of buildings formatted to work with React and JSX to render the contents to the browser
-- *index.css* - A starter CSS templage for you to use for this project
+- *index.css* - A starter CSS template for you to use for this project
 - *app.css* - An empty file that we aren't using for this project but do not delete it as it will affect the functioning of your program
 - *index.js* - This file is used in creating the application file that you will be manipulating through the App.js file. This is where we have injected the data.js file and the building data that we pass around for the entire application.
 - *App.js* - This is the main application we are developing. The majority of our development will be in this file.
@@ -270,7 +270,7 @@ For this assignment you will be building upon our UF directory application by cr
     - It has a display box for printing out more details about the selected building
     - It imports and uses several React Component files to implement this functionality
 
-- React Component Files - *React use compoenents to organize and squirrel away functionality so that we can reuse it in multiple places. Ultimately, it allows our code to look cleaner and maximizes reusability for future developmen.*
+- React Component Files - *React use components to organize and squirrel away functionality so that we can reuse it in multiple places. Ultimately, it allows our code to look cleaner and maximizes reusability for future development.*
     - *BuildingList.js* - This is a React Component that prints the building code and the name to the screen
     - *Search.js*  - This is a React Component that filters the contents of the list based on the user's input in the textbox
     - *ViewBuilding.js* - This is a React Component that allows us to view additional listing details for the current selected building             when a user clicks on a listing
@@ -286,7 +286,7 @@ As you develop the solution to this assignment you will need to complete at leas
 
 - BuildingList.js: *In this file you will*
     - create a filter on the building list constant that allows you to filter on the name of the building 
-    - display only the buldings the meet the filter criteria
+    - display only the buildings the meet the filter criteria
     - Create an onClick listener action that will allow you to click on a building name and capture the ID
 
 - Search.js: *In this file you will*
@@ -299,7 +299,7 @@ As you develop the solution to this assignment you will need to complete at leas
     - Return additional details of the building to be rendered on the screen for the user
 
 - Create two new components that allow you to add and remove elements from the list.
-    - AddBuilding.js - Add a buliding to the listings
+    - AddBuilding.js - Add a building to the listings
     - RemoveBuilding.js - remove a building from the listings
 
 - index.css - Style the User Interface of this app using CSS and Bootstrap 4 to make this app look professional and user friendly, e.g., 
@@ -311,7 +311,7 @@ As you develop the solution to this assignment you will need to complete at leas
 
 
 ### Setup
-*Note: This is a big assignment, start early and work on getting simple things working first. **Remember the Baby Name App tutorial listed in the React section, provides a video tutorial walkthrough of many of the feaures you will be completing for this project.**
+*Note: This is a big assignment, start early and work on getting simple things working first. **Remember the Baby Name App tutorial listed in the React section, provides a video tutorial walkthrough of many of the features you will be completing for this project.**
 
 1. Install Bootstrap 4, [there are 3  ways](https://getbootstrap.com/docs/4.3/getting-started/download/):
    (1) npm install bootstrap (or yarn add bootstrap) - *Recommended*
@@ -331,7 +331,7 @@ As you develop the solution to this assignment you will need to complete at leas
     *You will use this later in the project when you start to style your page* 
 
 2. Install the [create-react-app](https://github.com/facebook/create-react-app#creating-an-app)
-To help us get started quickly, we will be using the create-react-app, a template generator for creating React Applciations quickly without having to install a ton of external dependencies. 
+To help us get started quickly, we will be using the create-react-app, a template generator for creating React Applications quickly without having to install a ton of external dependencies. 
 
 Run the command in terminal to create a starter application my-app (note: you can change this to bootcamp4 if you like.)
 
@@ -353,13 +353,13 @@ or
 
     Runs the app in development mode.
 
-5. It should auto-open http://localhost:3000 in the browser after it starts up a server for you. If a browser doesn't open up, copy and paste this link into your web brower with a starter page.
+5. It should auto-open http://localhost:3000 in the browser after it starts up a server for you. If a browser doesn't open up, copy and paste this link into your web browser with a starter page.
 
-6. After this you should open the folder and replace the src file wit the file for this Bootcamp #4 github repo. You should then be able to see a listing of the building codes and buildings, search/filter texbox and space to output details about your project.
+6. After this you should open the folder and replace the src file wit the file for this Bootcamp #4 github repo. You should then be able to see a listing of the building codes and buildings, search/filter textbox and space to output details about your project.
 
 7. Use the starter code (e.g, create-react-app with Bootcamp #4 code you created in steps 1-3) to create a front-end interface with React.js to display listings, as well as the ability to add new listings and delete old ones. 
 
-**See Development Goals** above for specific implemenetation details for this project.
+**See Development Goals** above for specific implementation details for this project.
 
 **Debugging Tips:** 
 
